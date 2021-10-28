@@ -49,7 +49,7 @@
 						</div>
 					</ul>
 				</li>
-				<li  class="has-sub ">
+				<!-- <li  class="has-sub ">
 					<a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#orders"
 						aria-expanded="false" aria-controls="orders">
 						<i class="mdi mdi-cart-outline"></i>
@@ -144,7 +144,7 @@
 							</li>
 						</div>
 					</ul>
-				</li>
+				</li> -->
 				<li  class="has-sub {{ ($currentAdminMenu == 'role-user') ? 'expand active' : ''}}">
 					<a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#auth"
 						aria-expanded="false" aria-controls="auth">

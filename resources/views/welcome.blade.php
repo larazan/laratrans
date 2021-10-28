@@ -144,6 +144,7 @@
             <a href="{{ route('register') }}">Register</a>
             @endif
             @endauth
+            <a href="{{ url('/cv') }}">CV</a>
         </div>
         @endif
 

@@ -22,6 +22,10 @@ Route::get('/', function () {
     
 });
 
+Route::get('/cv', function() {
+	return view('cv');
+});
+
 Route::group(
     ['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth']],
     function() {
