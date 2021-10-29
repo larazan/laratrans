@@ -24,6 +24,7 @@ use App\Models\Brand;
 
 use App\Authorizable;
 
+
 class ProductController extends Controller
 {
 	use Authorizable;
@@ -111,6 +112,8 @@ class ProductController extends Controller
 		} else {
 			Session::flash('error', 'Product could not be saved');
 		}
+
+		activity()->log('input data produk baru');
 
 		return redirect('admin/products/'. $product->id .'/edit/');
     }
@@ -300,7 +303,7 @@ class ProductController extends Controller
 		} else {
 			Session::flash('error', 'Product could not be saved');
 		}
-
+		activity()->log('update data produk');
 		return redirect('admin/products');
     }
 
@@ -318,7 +321,7 @@ class ProductController extends Controller
         if ($product->delete()) {
             Session::flash('success', 'Product has been deleted');
         }
-
+		activity()->log('hapus data produk');
         return redirect('admin/products');
     }
 
